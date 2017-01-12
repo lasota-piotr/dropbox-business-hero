@@ -1,0 +1,148 @@
+* {
+  margin: 0; padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  font: 16px 'Open Sans', sans-serif;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+}
+
+.hero {
+  background: #e3eefc;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  padding: 15px 15px;
+  min-height: 400px;
+}
+
+.hero h1,
+.hero h3 {
+  font-weight: 300;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+
+span.no-wrap {
+  white-space: nowrap;
+}
+
+.hero h3 {
+  font-size: 1em;
+  margin-bottom: 60px;
+  line-height: 1.5em;
+}
+
+.hero .btn {
+  display: block;
+  max-width: 330px;
+
+  line-height: 2.8em;
+  border-radius: 6px;
+  padding: 0 39px;
+  background: #0071e0;
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.hero p a {
+  color: #0071e0;
+  text-decoration: none;
+  border-bottom: solid 1px #0071e0;
+}
+
+.hero .btn:hover {
+  background-color: #3398ea;
+  color: white;
+}
+
+.hero p a:hover {
+  color: #3398ea;
+}
+
+@media screen and (min-width: 400px) {
+  .hero {
+    align-items: flex-start;
+    min-height: 460px;
+    background: 
+      #e3eefc url('../img/background.jpg') 
+      125px 50% / cover
+      no-repeat;
+  }
+  .hero h1,
+  .hero h3 {
+    text-align: left;
+    max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .hero {
+    padding: 20px 20px;
+    background-position: calc(100% + 100px) center;
+    background-size: contain;
+  }
+  .hero h1,
+  .hero h3 {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    min-height: 665px;
+  }
+
+  .hero h1 {
+    font-size: 1.95em;
+    line-height: 1.3em;
+    max-width: 350px;
+  }
+
+  .hero p {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hero {
+    background-position: 100% center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    padding-left: calc(50% - 492px);
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .hero h1 {
+    font-size: 3em;
+  }
+  .hero h3 {
+    font-size: 1.3em;
+    max-width: 450px;
+    margin-bottom: 40px;
+  }
+
+  .hero .btn {
+    font-size: 1.3em;
+    padding: 0 25px;
+  }
+}
